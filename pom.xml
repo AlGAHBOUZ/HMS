@@ -14,4 +14,39 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- Logging -->
+        <!-- SLF4J, a simple facade for various logging frameworks,
+        allowing us to plug in logging frameworks at deployment time  -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+        <dependency>
+            <!-- Logback, provides features for logging in applications and is commonly used alongside SLF4J -->
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.6</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Database -->
+        <!-- MSSQL JDBC Driver, to make communication between our application and MS SQL  -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>9.4.0.jre11</version>
+        </dependency>
+
+        <!-- Utility
+         Apache Commons Lang is a library that provides helper utilities for the java.lang API.
+ It includes various utility methods for string manipulation, array manipulation, random number generation, and more
+        -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+    </dependencies>
 </project>
